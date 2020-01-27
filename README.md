@@ -10,3 +10,11 @@
 6. Npm
 7. Express
 8. Nodemon
+
+## Modulos instalados
+1.  express => npm install express
+2.  node-sass-middleware => npm i -d node-sass-middleware
+3.  pug => npm i -d pug
+4.  serve-favicon => npm i -d serve-favicon
+5.  nodemon => npm i -d nodemon
+6.  ack-reload => npm i -D ack-reload

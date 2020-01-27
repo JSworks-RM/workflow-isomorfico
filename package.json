@@ -1,0 +1,35 @@
+{
+  "name": "workflow-isomorfico",
+  "version": "1.0.0",
+  "description": "Workflow Isomórfico con JavaScript",
+  "main": "package.json",
+  "scripts": {
+    "build": "npx babel-node app.js",
+    "build2": "babel src -d public",
+    "serve": "nodemon --watch src -e pug,scss,js,json --exec npx babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSworks-RM/workflow-isomorfico.git"
+  },
+  "author": "José Ignacio RM <joseignaciorm13@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JSworks-RM/workflow-isomorfico/issues"
+  },
+  "homepage": "https://github.com/JSworks-RM/workflow-isomorfico#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "ack-reload": "^3.0.3",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
