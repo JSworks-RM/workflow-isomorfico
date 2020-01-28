@@ -22,3 +22,9 @@
 8.  watchify
 9.  Babelify 
 
+
+## Módulos, plugins para ejecutar autoprefixers y minificar los archivos scripts.
+
+1.  autoprefixer => npm i -D autoprefixer
+2.  postcss-cli =>  npm i -D postcss-cli
+3.  uglify  => npm i -D uglify

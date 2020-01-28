@@ -5,7 +5,7 @@ import sassMiddleware from 'node-sass-middleware'
 import routes from './src/app/routes'
 
 // Constantes 
-const env = 'development', // Entorno desarrollo 'development'
+const env = 'production', // Entorno desarrollo 'development'
     port        = process.env.PORT || 3000, // El objeto process es del cual cuelga la aplicación que ejecuta node
     publicDir   = `${__dirname}/public`,  // Definimos un directorio público de la aplicación
     viewDir     = `${__dirname}/src/views`, // Ruta del directorio donde estarán las vistas
@@ -43,7 +43,7 @@ app
 // Sólo los vamos a tener cuando la aplicación este en desarrollo.
 // Si la propiedad 'env' esta en production, lanzamos los middleworks que nos van a ayudar a capturar cualquier tipo de error tanto en el cliente "400.." y en servidor "500..."
 // Ejecutamos una función anónima. Los middlework de express reciben tres parametros: los require, la respuesta y un método next que ejecuta el siguiente middlework que esta en el stack de middlework que tenga la aplicación.
-    if ( app.get('env' === 'desarrollo' ) )
+    if ( app.get('env' === 'production' ) )
             app.use((req, res, next) => {
                 let err = new Error('Not Found') // Creamos objeto de tipo error
                 err.status = 404
