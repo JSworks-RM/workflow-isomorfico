@@ -18,3 +18,7 @@
 4.  serve-favicon => npm i -d serve-favicon
 5.  nodemon => npm i -d nodemon
 6.  ack-reload => npm i -D ack-reload
+7.  browserify
+8.  watchify
+9.  Babelify 
+
